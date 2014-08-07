@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" 
+    android:orientation="vertical">    	
+    <SeekBar
+        android:id="@+id/voiceprogress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/mogoo_task_music_seekbar_style"
+        android:thumb="@drawable/mogoo_voice_ball"
+        android:secondaryProgress="0"
+        android:max="100"
+        android:maxHeight="8dip"
+        android:minHeight="8dip"
+        android:thumbOffset="1dip"
+   />
+   <ImageView
+        android:id="@+id/voiceicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/voiceprogress"
+        android:layout_marginTop="1dip"
+        android:src="@drawable/mogoo_voice_speaker"
+   />
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project Licensed under the 
+	Apache License, Version 2.0 (the "License"); you may not use this file except 
+	in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+
+<com.mogoo.launcher2.DragLayer xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:launcher="http://schemas.android.com/apk/res/com.mogoo.launcher"
+
+	android:id="@+id/drag_layer" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="271dip"
+		android:layout_gravity="bottom|center_horizontal" 
+		android:paddingTop="0dip"> 
+		
+		<ImageView 
+			android:id="@+id/mogoo_dockview_shadow" 
+			android:orientation="horizontal" 
+			android:src="@drawable/mogoo_dockview_shadow"
+			android:layout_width="fill_parent" 
+			android:layout_height="271dip"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:visibility="gone" />
+	</RelativeLayout>
+	
+	
+	<!-- The workspace contains 3 screens of cells -->
+	<com.mogoo.launcher2.Workspace 
+		android:id="@+id/workspace"
+		android:layout_width="match_parent" 
+		android:layout_height="380dip"
+		launcher:defaultScreen="1">
+
+		<include android:id="@+id/cell1" layout="@layout/mogoo_search_screen" />
+		<!-- update by 袁业奔 2011-9-8 -->
+		<!-- 
+        <include android:id="@+id/cell2" layout="@layout/workspace_screen" />
+
+		<include android:id="@+id/cell3" layout="@layout/workspace_screen" />
+		<include android:id="@+id/cell4" layout="@layout/workspace_screen" />
+		<include android:id="@+id/cell5" layout="@layout/workspace_screen" />
+		<include android:id="@+id/cell6" layout="@layout/workspace_screen" />
+		-->
+		<!-- end -->
+	</com.mogoo.launcher2.Workspace>
+
+	<!-- add by weijingchun 2011-1-19 -->
+
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="103dip"
+		android:layout_gravity="bottom|center_horizontal" 
+		android:paddingTop="0dip">
+				
+        <ImageView 
+			android:id="@+id/dock_background" 
+			android:orientation="horizontal" 
+			android:src="@drawable/mogoo_dockview_background"
+			android:layout_width="fill_parent" 
+			android:layout_height="79dip"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true" />
+			
+	    <ImageView 
+		    android:id="@+id/screenIndicator"
+		    android:layout_width="match_parent" 
+		    android:layout_height="24dip"
+		    android:layout_above="@id/dock_background" 
+		    android:scaleType="center"
+		    android:clickable="true"
+		    android:focusable="true" 
+		    android:visibility="visible" />
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:id="@+id/dock_toolbar"
+		android:layout_width="fill_parent" 
+		android:layout_height="88dip"
+		android:layout_gravity="bottom|center_horizontal" 
+		android:paddingTop="0dip">				
+		
+		<com.mogoo.launcher2.Mogoo_DockWorkSpace 
+			android:id="@+id/dockWorkSpace"
+			android:orientation="horizontal" 
+			android:layout_width="fill_parent" 
+			android:layout_height="@dimen/dock_height"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true" 
+			android:gravity="center" 
+			android:hapticFeedbackEnabled="false"
+    		launcher:cellWidth="@dimen/workspace_cell_width"
+    		launcher:cellHeight="@dimen/workspace_cell_height">
+		</com.mogoo.launcher2.Mogoo_DockWorkSpace>
+	</RelativeLayout>
+	<!-- end -->
+	
+	<com.mogoo.launcher2.Mogoo_FolderLayout
+		android:id="@+id/folderLayer"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="invisible">
+		
+		<RelativeLayout
+			android:id="@+id/folderLayerCenter"
+			android:layout_width="fill_parent"
+			android:background="@drawable/mogoo_folder_bg"
+			android:layout_height="wrap_content">
+			
+			<RelativeLayout android:layout_width="fill_parent"
+				android:id="@+id/titleText"
+				android:layout_height="27dip">
+				<TextView android:id="@+id/title"
+					android:layout_width="fill_parent"
+					android:paddingLeft="10dip"
+					android:layout_marginLeft="8dip"
+					android:layout_marginTop="8dip"
+					android:textStyle="bold"
+					android:layout_height="wrap_content"/>
+					
+				<EditText 
+					android:id="@+id/titleEdit"
+					android:layout_width="fill_parent"
+					android:layout_marginTop="5dip"
+					android:layout_marginLeft="15dip"
+					android:layout_marginRight="15dip"
+					android:singleLine="true"
+					android:paddingLeft="10dip"
+					android:background="@drawable/mogoo_folder_edit_bg"
+					android:visibility="gone"
+					android:layout_height="wrap_content"/>
+			</RelativeLayout>
+			<com.mogoo.launcher2.Mogoo_FolderWorkspace
+				android:id="@+id/folderWorkspace"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			    android:hapticFeedbackEnabled="false"
+    			launcher:cellWidth="@dimen/workspace_cell_width"
+    			launcher:cellHeight="@dimen/workspace_cell_height"
+    			launcher:longAxisStartPadding="0dip"
+    			launcher:longAxisEndPadding="0dip"
+    			launcher:shortAxisStartPadding="10dip"
+    			launcher:shortAxisEndPadding="10dip"
+    			android:visibility="invisible"
+    			android:layout_below="@id/titleText"/>
+		</RelativeLayout>
+		
+		<ImageView
+			android:id="@+id/folderLayerTopImage"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top|center_horizontal"/>
+		
+		<ImageView
+			android:id="@+id/folderLayerBottomImage"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center_horizontal"
+			android:layout_below="@id/folderLayerTopImage"/>
+			
+		<ImageView
+			android:id="@+id/folderTrigona"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:background="@drawable/mogoo_folder_trigona"/>
+		
+	</com.mogoo.launcher2.Mogoo_FolderLayout>
+	 <!--
+	<ImageView
+		android:id="@+id/selectFolder"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/>
+	-->
+	<ImageView
+		android:id="@+id/folderIndication"
+		android:visibility="invisible"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	 
+</com.mogoo.launcher2.DragLayer>

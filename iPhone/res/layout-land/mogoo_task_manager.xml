@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/com.mogoo.launcher"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="94dip"
+	android:layout_gravity="bottom">
+		<com.mogoo.launcher2.taskManager.ui.Mogoo_TaskWorkspace
+	    	android:id="@+id/taskWorkspace"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			launcher:defaultScreen="2">
+		</com.mogoo.launcher2.taskManager.ui.Mogoo_TaskWorkspace>
+	</RelativeLayout>
+	
+    <ImageView
+    	android:id="@+id/screenImage"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"/>
+</FrameLayout>

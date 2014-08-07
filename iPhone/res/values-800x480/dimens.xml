@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="title_texture_width">120px</dimen>
+
+    <!-- height of the bottom row of controls -->
+    <dimen name="button_bar_height">56dip</dimen>
+
+    <!-- so we have access to this dimension in landscape mode even though
+         button_bar_height changes -->
+    <dimen name="button_bar_height_portrait">56dip</dimen>
+    
+    <!-- 设定搜索屏单元格宽度 -->
+    <dimen name="search_screen_width">480px</dimen>
+    <!-- 设定搜索屏单元格高度 -->
+    <dimen name="search_screen_height">530px</dimen>
+    
+    <dimen name="dock_height">95dip</dimen>
+    
+
+    <!-- roughly a status bar (for vertically centering the all apps
+         home icon in landscape) -->
+    <dimen name="status_bar_height">16dip</dimen>
+
+    <!-- roughly half a status bar (for vertically centering the right-hand
+         button cluster in landscape) -->
+    <dimen name="half_status_bar_height">12dip</dimen>
+
+    <!-- height & width of the drop rectangle for the trash icon -->
+    <dimen name="delete_zone_size">70dip</dimen>
+    
+    <!-- delete_zone_size_full - button_bar_height_portrait -->
+    <dimen name="delete_zone_padding">14dip</dimen>
+    
+    <!-- add by 袁业奔 2011-9-21 -->
+    <!--  绘制图标的高度-->
+    <dimen name="icon_width">58dip</dimen>
+    
+    <!--  绘制图标的宽度-->
+    <dimen name="icon_height">58dip</dimen>
+    
+    <!--  指示器点间距-->
+    <dimen name="indicator_margin">10dip</dimen>
+    
+    <!--  文件夹背景宽度-->
+    <dimen name="icon_folder_bg_width">92dip</dimen>
+    
+    <!--  文件夹背景高度-->
+    <dimen name="icon_folder_bg_height">92dip</dimen>
+    
+    <!--  文件夹图标中的图标缩略图-->
+    <dimen name="scale_icon_size">10dip</dimen>
+    
+    <!--  文件夹图标中的图标缩略图-->
+    <dimen name="scale_cell_size">16dip</dimen>
+    
+    <!--  文件夹图标中的图标缩略图-->
+    <dimen name="folder_padding_size">6dip</dimen>
+    
+    <!--  文件夹图标中的图标缩略图-->
+    <dimen name="scall_icon_padding_size">1dip</dimen>
+    
+    <!--  工具栏图标倒影宽  -->
+    <dimen name="reflection_width_port">58dip</dimen>
+    
+    <!--  工具栏图标倒影高  -->
+    <dimen name="reflection_height_port">21dip</dimen>
+    <!-- end -->
+    
+    <!--  绘制图标的边框圆角的角度大小  -->
+    <dimen name="radii">11dip</dimen>
+    <!-- end -->
+    
+    <!--  部分应用程序图标小于标准时,放大的尺寸  -->
+    <dimen name="icon_scale_size">58dip</dimen>
+    <!-- end -->
+
+    
+     <!-- 日历天数字体大小 -->
+    <dimen name="date_text_size">38dip</dimen>
+    <!-- 日历周数字体大小 -->
+    <dimen name="day_text_size">10dip</dimen>
+    <!--  日历天数绘制位置调整  -->
+    <dimen name="date_height_fix_value">10dip</dimen>
+    <!-- end -->
+    
+    <!--  图标上方短信计数器数字字体大小  -->
+    <dimen name="icon_count_text_size">12dip</dimen>
+    <!-- end -->
+    <!--  滑动增量  -->
+    <dimen name="scroll_fix_value">5dip</dimen>
+    <!-- end -->
+</resources>

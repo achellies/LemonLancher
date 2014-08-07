@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.limemobile.app.launcher.view.HTCSenseLockScreenView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sense_unlock_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <include
+        android:layout_gravity="top|center_horizontal"
+        layout="@layout/htc_sense_time_date" />
+
+    <ImageView
+        android:id="@+id/sense_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/sense_ring_on_unlock" />
+
+    <ImageView
+        android:id="@+id/sense_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/sense_panel" />
+
+    <ImageView
+        android:id="@+id/sense_lock_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY" />
+
+</com.limemobile.app.launcher.view.HTCSenseLockScreenView>

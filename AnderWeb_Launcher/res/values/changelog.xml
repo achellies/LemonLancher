@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="adw_changelog">
+-&lt;b>NOTICE:&lt;/b> If your theme looks ugly, ask your theme developer to update it!!! &lt;br>&lt;br>
+-&lt;b>NOTICE:&lt;/b> To add/remove screens press MENU/Edit&lt;br>&lt;br>
+-&lt;b>NOTICE:&lt;/b> To enable ORIENTATION, disable PERSISTENCE.&lt;br>&lt;br>
+-&lt;b>REMEMBER:&lt;/b> You can hide apps from the drawer by using the custom catalogs (press menu key while the drawer is open) &lt;br>&lt;br>
+
+&lt;b>Version 1.3.0:&lt;/b>&lt;br>
+&lt;b>--------------&lt;/b>&lt;br>
+-Small UI revamp (Trash can moved to the top, configurable main dock, etc) &lt;br>
+-Drag and drop a desktop icon in the same place to edit it &lt;br>
+-Support for coloured counter bubbles. &lt;br>
+-Support for easier scrolling of the hidden dockbar. &lt;br>
+-Support for replacing the app drawer button with anything &lt;br>
+-You can uninstall widgets too by holding them into the trash can &lt;br>
+-Lots of fixes &lt;br>
+
+</string>
+</resources>

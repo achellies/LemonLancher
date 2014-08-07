@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+	class="com.mogoo.launcher2.search.ui.WebSuggestionView"
+	android:paddingLeft="8dip" android:paddingRight="8dip"
+	android:layout_width="match_parent" android:layout_height="42dip">
+
+	<ImageView android:layout_alignParentLeft="true" android:paddingRight="10dip"
+		android:layout_width="40dip" android:layout_height="wrap_content"
+		android:id="@+id/ItemImage" />
+		
+	<ImageView android:layout_width="1px" android:layout_toRightOf="@id/ItemImage"
+		android:layout_height="match_parent" android:id="@+id/ItemGrep" android:background="#FFFFFFFF"/>
+
+	<RelativeLayout android:layout_width="wrap_content"
+		android:paddingLeft="8dip" android:paddingRight="8dip"
+		android:layout_height="match_parent" android:layout_toRightOf="@+id/ItemGrep">
+
+		<TextView android:layout_height="wrap_content"
+			android:textSize="9dip" android:layout_width="match_parent"
+			android:id="@+id/ItemTitle" />
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:layout_below="@+id/ItemTitle"
+			android:textSize="7dip"
+			android:id="@+id/ItemText" />
+
+	</RelativeLayout>
+
+</view>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="launcher_entries">
+        <item>Wallpaper</item>
+        <item>"Reset launcher"</item>
+    </string-array>
+    
+     <string-array name="weak_entries">
+    	 <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+</resources>

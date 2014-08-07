@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- 广告获取地址  黄悦-->
+	<string name="motone_index_page" translatable="false">
+		http://wap.sohu.com</string>
+	<!-- 默认开机缓存页面 黄悦-->
+	<string name="web_init_buff">test.html</string>
+	<!-- 页面编码 黄悦-->
+	<string name="web_init_encoding">utf-8</string>
+	<!-- 搜索url -->
+	<string name="google_suggest_base" translatable="false">
+       http://ajax.googleapis.com/ajax/services/search/web?v=1.0&amp;start=4&amp;hl=%1$s&amp;gl=%2$s</string>
+	<!-- Dialog delete 黄悦-->
+	<string name="mogoo_ok">OK</string>
+	<string name="mogoo_cancal">Cancel</string>
+	<string name="mogoo_del_ask">Do you really want to delete </string>
+	<string name="mogoo_search_text">Search Phone</string>
+    <!-- denglixia modify 2011.6.15 -->
+    <string name="launcher_settings">Launcher settings</string>
+    <string name="settings_label">Settings</string>
+</resources>

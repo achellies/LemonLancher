@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.limemobile.app.launcher.view.HTCSenseTimeDateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="160dip"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/sense_time_bg" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/weather_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/weather_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <view
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="81dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="com.limemobile.app.launcher.view.HTCSenseTimeDateView$HTCSenseTimeView" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="left|center_vertical"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="20dip"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</com.limemobile.app.launcher.view.HTCSenseTimeDateView>

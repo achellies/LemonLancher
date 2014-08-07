@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.limemobile.app.launcher.view.SearchAppsView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:tag="search_app" >
+
+    <EditText
+        android:id="@+id/searchString"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@drawable/wp8_button"
+        android:inputType="textEmailAddress"
+        android:padding="8dip"
+        android:tag="searchString"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/searchResults"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:tag="search_app_list" />
+
+    <TextView
+        android:id="@+id/playStoreSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:tag="playStoreSearch"
+        android:text="@string/playStoreSearch"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</com.limemobile.app.launcher.view.SearchAppsView>

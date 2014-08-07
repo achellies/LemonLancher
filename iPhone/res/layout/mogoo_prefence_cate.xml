@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- ?android:attr/scrollbarSize -->
+    <LinearLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center_vertical"
+    		android:background="#00000000"
+    		android:layout_marginLeft="20dip"
+    	    android:layout_marginRight="?android:attr/scrollbarSize"
+    	    >       
+	<TextView 
+        	android:id="@+android:id/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingTop="8dip"
+            android:paddingBottom="5dip"
+            android:background="#00000000"
+            android:textSize="18sp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:textColor="@color/mogoo_iphone_preference_text"
+            android:shadowColor="@android:color/white"  
+     	    android:shadowDx="0"  
+    	    android:shadowDy="1"       
+     	    android:shadowRadius="1"/>
+</LinearLayout>
+</LinearLayout>

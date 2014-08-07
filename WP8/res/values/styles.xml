@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources>
+    <style name="Theme" parent="android:Theme.Wallpaper">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in_fast</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_fast</item>
+    </style>
+    
+    <style name="WorkspaceIcon">
+        <item name="android:textSize">13dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/shortcut_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+
+    <style name="WorkspaceIcon.Portrait">
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:layout_marginTop">13dip</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+
+    <style name="WorkspaceIcon.Landscape">
+        <item name="android:drawablePadding">3dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+    </style>
+
+    <style name="SearchButton" parent="@android:style/Widget.Button.Small">
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:paddingBottom">9dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+
+    <style name="HotseatButton">
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:background">@drawable/hotseat_bg_center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="HotseatButton.Left">
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@drawable/hotseat_bg_left</item>
+    </style>
+    <style name="HotseatButton.Right">
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:background">@drawable/hotseat_bg_right</item>
+    </style>
+    
+    
+    <style name="ButtonHoloDark" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/btn_default_holo_dark</item>
+    </style>
+    <style name="ButtonHoloLight" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/btn_default_holo_light</item>
+    </style>
+    <style name="RadioHoloDark" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:button">@drawable/btn_radio_holo_dark</item>
+    </style>
+    <style name="RadioHoloLight" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:button">@drawable/btn_radio_holo_light</item>
+    </style>
+    <style name="CheckBoxHoloDark" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:button">@drawable/btn_checkbox_holo_dark</item>
+    </style>
+    <style name="CheckBoxHoloLight" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:button">@drawable/btn_checkbox_holo_light</item>
+    </style>
+    <style name="SeekBarHolo" parent="@android:style/Widget.SeekBar">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">13.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13.0dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16.0dip</item>
+    </style>
+    <style name="ProgressBarHolo.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">16.0dip</item>
+    </style>
+    
+    <style name="SpinnerLight" parent="@android:style/Widget.Spinner">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+    <style name="SpinnerDark" parent="@android:style/Widget.Spinner">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/spinner_background_holo_dark</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+    <style name="SpinnerItemDark" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="SpinnerItemLight" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="DropDownItemDark" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:checkMark">@drawable/btn_radio_holo_dark</item>
+    </style>
+    <style name="DropDownItemLight" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:checkMark">@drawable/btn_radio_holo_light</item>
+    </style>
+    
+	<style name="Animations" />
+
+	<!-- PopDownMenu -->
+	<style name="Animations.PopDownMenu" />
+	
+	<style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_top</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+	
+	<!-- PopUpMenu -->
+	<style name="Animations.PopUpMenu" />
+	
+	<style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+</resources>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+       <string-array name="menu_binding_entries">
+		<item>Отключено</item>
+                <item>рабочий стол по умолчанию</item>
+                <item>рабочий стол по умолчанию/обзор</item>
+                <item>обзор</item>
+                <item>открыть/закрыть главное меню</item>
+                <item>скрыть/показать строку статуса</item>
+                <item>открыть/закрыть уведомления</item>
+                <item>рабочий стол по умолчанию/уведомления</item>
+                <item>открыть/закрыть выдвижную панель</item>
+                <item>открыть приложение:</item>
+       </string-array>
+       <string-array name="desktop_indicator_entries">
+                <item>точки вверху</item>
+                <item>полоска вверху</item>
+                <item>полоска внизу</item>
+       </string-array>
+       <string-array name="home_orientation_entries">
+                <item>Авто/датчик</item>
+                <item>Книжная</item>
+                <item>Альбомная</item>
+       </string-array>
+       <string-array name="screen_cache_entries">
+                <item>Низкое качество</item>
+                <item>Автоматически</item>
+                <item>Отключить</item>
+       </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="launcher_entries">
+        <item>Wallpaper</item>
+        <item>"Reset launcher"</item>
+    </string-array>
+</resources>

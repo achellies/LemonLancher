@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.limemobile.app.launcher.wp8.AllAppsLetterFilter xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/all_apps_wp8_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.google.ads.AdView
+            android:id="@+id/ad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="a1509b0003cf671"
+            ads:loadAdOnCreate="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:padding="2dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip" >
+
+                <ImageButton
+                    android:id="@+id/wp8_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="42dip"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/wp8_arrow" />
+
+                <ImageButton
+                    android:id="@+id/wp8_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/wp8_arrow"
+                    android:layout_marginTop="10dip"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/wp8_search" />
+
+                <ImageButton
+                    android:id="@+id/wp8_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="42dip"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/android" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/all_apps_letter_filter"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1.0"
+                android:cacheColorHint="#00000000"
+                android:drawSelectorOnTop="false"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dip"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:tag="all_apps_list" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.limemobile.app.launcher.view.LetterFilterView
+        android:id="@+id/letter_filter"
+        android:layout_width="42dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:tag="letter_filter" />
+
+    <TextView
+        android:id="@+id/letter_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_middle"
+        android:gravity="center"
+        android:tag="letter_indicator"
+        android:textColor="@android:color/white"
+        android:textSize="36.0dip" />
+
+    <GridView
+        android:id="@+id/letter_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:horizontalSpacing="5dip"
+        android:layoutAnimation="@anim/layout_grid_fade"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:tag="letter_grid"
+        android:verticalSpacing="5dip" />
+
+    <include layout="@layout/searchapps" />
+
+</com.limemobile.app.launcher.wp8.AllAppsLetterFilter>

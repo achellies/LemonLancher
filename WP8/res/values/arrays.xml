@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hotseats" translatable="false">
+        <item>intent:#Intent;action=android.intent.action.DIAL;end</item>
+        <item>*MESSAGE*</item>
+        <item>*CAMERA*</item>
+        <item>*BROWSER*</item>
+    </string-array>
+    <array name="hotseat_icons" translatable="false">
+        <item>@drawable/iphone_phone</item>
+        <item>@drawable/iphone_imessage</item>
+        <item>@drawable/iphone_camera</item>
+        <item>@drawable/iphone_safari</item>
+    </array>
+</resources>

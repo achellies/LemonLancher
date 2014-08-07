@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restore>
+    <exception name="com.mt.launcher2.exception.Mogoo_BootRestoreException">
+        <class name="com.mt.launcher2.restore.Mogoo_BootRestorePolicyImpl"></class>
+    </exception>
+</restore>

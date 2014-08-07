@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources>
+    <style name="Theme" parent="android:Theme.Wallpaper">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in_fast</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_fast</item>
+    </style>
+    
+    <style name="mogoo_sms_prefence_cate">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">#FF868E9D</item>
+	</style>
+	
+	<style name="mogoo_sms_prefence_item">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">#FF000000</item>
+	</style>
+    
+    <style name="WorkspaceIcon">
+        <item name="android:textSize">11dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:textColor">#FEFEFE</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/shortcut_selector</item>
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">6dip</item>
+    </style>
+
+    <style name="WorkspaceIcon.Portrait">
+        <item name="android:drawablePadding">0dip</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:layout_marginLeft">1dip</item>
+        <item name="android:layout_marginRight">1dip</item>
+        <item name="android:layout_marginTop">2dip</item>
+        <item name="android:layout_marginBottom">2dip</item>
+    </style>
+  
+    <style name="WorkspaceIcon.Landscape">
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:layout_marginLeft">1dip</item>
+        <item name="android:layout_marginRight">1dip</item>
+        <item name="android:layout_marginTop">15dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+    </style>
+
+    <style name="SearchButton" parent="@android:style/Widget.Button.Small">
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:paddingBottom">9dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+
+    <style name="HotseatButton">
+        <item name="android:paddingLeft">11dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:background">@drawable/hotseat_bg_center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="HotseatButton.Left">
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@drawable/hotseat_bg_left</item>
+    </style>
+    <style name="HotseatButton.Right">
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:background">@drawable/hotseat_bg_right</item>
+    </style>
+	
+	<!-- add by weijingchun  2011-1-19 -->
+	<!-- 添加工具栏图标样式 -->
+	<style name="DockIcon">
+        <item name="android:textSize">11dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/shortcut_selector</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">4dip</item>
+    </style>
+	
+	<style name="DockIcon.Portrait">
+        <item name="android:drawablePadding">0dip</item>
+        <item name="android:paddingTop">0dip</item>     
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+    </style>
+    
+    <style name="DockIcon.Landscape">
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+        <item name="android:layout_marginRight">6dip</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+    </style>
+	<!-- end  -->
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/setting_title_generic_setting" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="screenorientation"
+            android:layout="@layout/preference"
+            android:summary="@string/setting_screenorientation_desc"
+            android:title="@string/setting_screenorientation"
+            android:widgetLayout="@layout/preference_checkbox" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="lockscreen"
+            android:layout="@layout/preference"
+            android:summary="@string/setting_lock_screen_desc"
+            android:title="@string/setting_lock_screen"
+            android:widgetLayout="@layout/preference_checkbox" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
